@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E422B05-8D22-40DE-98E5-EE59EFC0A53C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OtelMaster11</RootNamespace>
+    <AssemblyName>OtelMaster11</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.CodeParser.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v18.1.UI, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.1.UI, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v18.1.Extensions, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v18.1.Wizard, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v18.1.Extensions, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CleaningStatusForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CleaningStatusForm2.Designer.cs">
+      <DependentUpon>CleaningStatusForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DestekTalepleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DestekTalepleri.Designer.cs">
+      <DependentUpon>DestekTalepleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HotelExpenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HotelExpenses.Designer.cs">
+      <DependentUpon>HotelExpenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriEkleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriEkleme.Designer.cs">
+      <DependentUpon>MusteriEkleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewReservationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewReservationForm.Designer.cs">
+      <DependentUpon>NewReservationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdaIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdaIslemleri.Designer.cs">
+      <DependentUpon>OdaIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odeme.Designer.cs">
+      <DependentUpon>Odeme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel.Designer.cs">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RibbonForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RibbonForm1.Designer.cs">
+      <DependentUpon>RibbonForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SifreSifirlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifreSifirlama.Designer.cs">
+      <DependentUpon>SifreSifirlama.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CleaningStatusForm2.resx">
+      <DependentUpon>CleaningStatusForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DestekTalepleri.resx">
+      <DependentUpon>DestekTalepleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HotelExpenses.resx">
+      <DependentUpon>HotelExpenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriEkleme.resx">
+      <DependentUpon>MusteriEkleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewReservationForm.resx">
+      <DependentUpon>NewReservationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdaIslemleri.resx">
+      <DependentUpon>OdaIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odeme.resx">
+      <DependentUpon>Odeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel.resx">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RibbonForm1.resx">
+      <DependentUpon>RibbonForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SifreSifirlama.resx">
+      <DependentUpon>SifreSifirlama.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\room.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-reservation-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-report-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FORM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginpage3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bed-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-broom-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-door-hanger-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-reservation-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-room-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-service-bell-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-money-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-report-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\otel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotelimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-update-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-room-service-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-list-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add111-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\liste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-employee-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-support-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ödeme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sifre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sifre1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-hotel-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dönüştürülmüş.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-client-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pay-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-account-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bill-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-book-a-photoshoot-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-settings-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cleaning-32 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-child-safe-zone-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-registry-editor-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-request-32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
